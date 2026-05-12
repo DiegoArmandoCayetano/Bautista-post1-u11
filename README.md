@@ -180,11 +180,6 @@ mvn test
 - **Bean Validation**: Validación de datos
 - **Lombok** (opcional): Reducir boilerplate
 
-## Commits Realizados
-- `feat: estructura base de catalogo`
-- `feat: servicios y controlador`
-- `feat: manejo global de errores y docs`
-
 Autor
 
 Diego Armando Cayetano
