@@ -184,3 +184,7 @@ mvn test
 - `feat: estructura base de catalogo`
 - `feat: servicios y controlador`
 - `feat: manejo global de errores y docs`
+
+Autor
+
+Diego Armando Cayetano
