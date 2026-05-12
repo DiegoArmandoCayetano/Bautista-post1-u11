@@ -46,28 +46,7 @@ src/main/java/com/proweb/catalogo/
     └── ProductoController.java     # REST endpoints
 ```
 
-## REST API Endpoints
 
-### Crear Producto
-```http
-POST /api/productos
-Content-Type: application/json
-
-{
-  "nombre": "Laptop",
-  "precio": 3500000,
-  "categoria": "ELECTRONICA"
-}
-```
-**Respuesta (201 Created)**:
-```json
-{
-  "id": 1,
-  "nombre": "Laptop",
-  "precio": 3500000,
-  "categoria": "ELECTRONICA"
-}
-```
 
 ### Obtener Producto por ID
 ```http
@@ -91,35 +70,6 @@ DELETE /api/productos/{id}
 
 Los errores retornan respuestas estandarizadas:
 
-### 400 Bad Request (Validación)
-```json
-{
-  "status": 400,
-  "error": "Bad Request",
-  "mensaje": "nombre: El nombre es obligatorio; precio: El precio debe ser mayor a cero",
-  "path": "/api/productos"
-}
-```
-
-### 404 Not Found
-```json
-{
-  "status": 404,
-  "error": "Not Found",
-  "mensaje": "Producto con id 999 no encontrado.",
-  "path": "/api/productos/999"
-}
-```
-
-### 500 Internal Server Error
-```json
-{
-  "status": 500,
-  "error": "Internal Server Error",
-  "mensaje": "Error inesperado en servidor",
-  "path": "/api/productos"
-}
-```
 
 ## Ejecución
 
